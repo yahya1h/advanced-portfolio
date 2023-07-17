@@ -60,11 +60,64 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click">
             </div>
-        </a>
+        </a>    
+
+        <div class="modal">
+
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">
+                    Here's a bit about me
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--about">
+                    Frontend Software Engineer
+                </h4>
+                <p class="modal__para">
+                    I'm an 18 year old self taught <b class="blue">front-end developer</b> with a strong passion for <b class="blue">building responsive</b> and performant <b class="blue">web applications.</b> <br>
+                    I have a strong understanding of <b class="blue">HTML</b>,<b class="blue">CSS</b> and <b class="blue">JavaScript</b>. I'm currently open to new <b class="blue">opportunities</b>.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" class="modal__language--img">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" class="modal__language--img">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" class="modal__language--img">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">
+                    I'd love to hear from you.
+                </h4>
+                <form action="" id="contact__form">
+                    <div class="form__item">
+                        <label for="name" class="form__item--label">Name</label>
+                        <input type="text" class="input" name="user_name" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label for="email" class="form__item--label">Email</label>
+                        <input type="text" class="input" name="user_email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label for="message" class="form__item--label">Message</label>
+                        <textarea type="text" class="input" name="message" required></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </section>
 
     <section id="project">
-
         <div class="container">
             <div class="row">
                 <h1 class="section__title">Here are some of my <span class="blue">projects</span></h1>
@@ -95,9 +148,32 @@
 
             </div>
         </div>
-
-
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img src="./assets/logo.svg" class="footer__logo--img">   
+                </figure>
+                <div class="footer__social--list">
+                    <a href="#" class="
+                    footer__social--link link__hover-effect link__hover-effect--white
+                    ">GitHub</a>
+                    <a href="#" class="
+                    footer__social--link link__hover-effect link__hover-effect--white
+                    ">LinkedIn</a>
+                    <a href="#" class="
+                    footer__social--link link__hover-effect link__hover-effect--white
+                    ">Contact</a>
+                    <a href="#" class="
+                    footer__social--link link__hover-effect link__hover-effect--white
+                    ">Resume</a>
+                </div>
+                <div class="footer__copyright">Copyright © 2023 Yahya Hashim</div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
