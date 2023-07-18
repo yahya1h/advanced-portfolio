@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <title>Yahya Hashim</title>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("UZTrOdcxQFPDPffCL");
+        })();
+    </script>
 </head>
 <body>
     
@@ -75,6 +84,7 @@
                     I'm an 18 year old self taught <b class="blue">front-end developer</b> with a strong passion for <b class="blue">building responsive</b> and performant <b class="blue">web applications.</b> <br>
                     I have a strong understanding of <b class="blue">HTML</b>,<b class="blue">CSS</b> and <b class="blue">JavaScript</b>. I'm currently open to new <b class="blue">opportunities</b>.
                 </p>
+
                 <div class="modal__languages">
                     <figure class="modal__language">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" class="modal__language--img">
@@ -89,6 +99,7 @@
                         <span class="language__name">JavaScript</span>
                     </figure>
                 </div>
+
             </div>
 
             <div class="modal__half modal__contact">
@@ -98,20 +109,30 @@
                 <h4 class="modal__sub-title modal__sub-title--contact">
                     I'd love to hear from you.
                 </h4>
-                <form action="" id="contact__form">
+
+                <form onsubmit="contact(event)" id="contact__form">
                     <div class="form__item">
                         <label for="name" class="form__item--label">Name</label>
-                        <input type="text" class="input" name="user_name" required></input>
+                        <input type="text" class="input" name="user_name" ></input>
                     </div>
                     <div class="form__item">
                         <label for="email" class="form__item--label">Email</label>
-                        <input type="text" class="input" name="user_email" required></input>
+                        <input type="text" class="input" name="user_email" ></input>
                     </div>
                     <div class="form__item">
                         <label for="message" class="form__item--label">Message</label>
-                        <textarea type="text" class="input" name="message" required></textarea>
+                        <textarea type="text" class="input" name="message" ></textarea>
                     </div>
+                    <button id="contact__submit" class="form__submit">Send it my way</button>
                 </form>
+
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon.
+                </div>
+                <i class="fas fa-times modal__exit click"></i>
             </div>
         </div>
 
@@ -175,6 +196,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
