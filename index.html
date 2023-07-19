@@ -35,12 +35,12 @@
                     nav__link--anchor link__hover-effect link__hover-effect--black">
                     Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="" class="
                     nav__link--anchor link__hover-effect link__hover-effect--black">
                     Contact</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="" class="
                     nav__link--anchor link__hover-effect link__hover-effect--black">
                     <i class="fas fa-adjust"></i></a>
@@ -53,7 +53,7 @@
                 <h1 class="title">Hey</h1>
                 <h1 class="title blue">I'm Yahya.</h1>
                 <p class="header__para">I'm a <b class="blue">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.<br>
-                Here's a bit more <b class="blue">about me</b>.</p>
+                Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.</p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/yahyahashim/" class="social__link click" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/yahya1h" class="social__link click" target="_blank"><i class="fab fa-github"></i></a>
@@ -62,7 +62,7 @@
             </div>
         </header>
 
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fas fa-envelope"></i>
         </button>
         
@@ -103,6 +103,7 @@
             </div>
 
             <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">
                     Let's have a chat!
                 </h3>
@@ -113,15 +114,15 @@
                 <form onsubmit="contact(event)" id="contact__form">
                     <div class="form__item">
                         <label for="name" class="form__item--label">Name</label>
-                        <input type="text" class="input" name="user_name" ></input>
+                        <input type="text" class="input" name="user_name" required></input>
                     </div>
                     <div class="form__item">
                         <label for="email" class="form__item--label">Email</label>
-                        <input type="text" class="input" name="user_email" ></input>
+                        <input type="text" class="input" name="user_email" required></input>
                     </div>
                     <div class="form__item">
                         <label for="message" class="form__item--label">Message</label>
-                        <textarea type="text" class="input" name="message" ></textarea>
+                        <textarea type="text" class="input" name="message" required></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">Send it my way</button>
                 </form>
@@ -132,7 +133,7 @@
                 <div class="modal__overlay modal__overlay--success">
                     Thanks for the message! Looking forward to speaking to you soon.
                 </div>
-                <i class="fas fa-times modal__exit click"></i>
+                
             </div>
         </div>
 
@@ -196,6 +197,5 @@
         </div>
     </footer>
 
-    
 </body>
 </html>
