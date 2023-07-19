@@ -25,23 +25,23 @@
             </figure>
 
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor link__hover-effect link__hover-effect--black">
                     About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="" class="
+                    <a href="#projects" class="
                     nav__link--anchor link__hover-effect link__hover-effect--black">
                     Projects</a>
                 </li>
                 <li class="nav__link" onclick="toggleModal()">
-                    <a href="" class="
+                    <a href="#" class="
                     nav__link--anchor link__hover-effect link__hover-effect--black">
                     Contact</a>
                 </li>
                 <li class="nav__link click" onclick="toggleContrast()">
-                    <a href="" class="
+                    <a href="#" class="
                     nav__link--anchor link__hover-effect link__hover-effect--black">
                     <i class="fas fa-adjust"></i></a>
                 </li>
@@ -139,7 +139,7 @@
 
     </section>
 
-    <section id="project">
+    <section id="projects">
         <div class="container">
             <div class="row">
                 <h1 class="section__title">Here are some of my <span class="blue">projects</span></h1>
@@ -160,8 +160,8 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fugit?
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="#" class="project__description--link"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="project__description--link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project__description--link" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://weather-yh.netlify.app/" class="project__description--link"><i class="fas fa-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                     ">LinkedIn</a>
                     <a href="#" class="
                     footer__social--link link__hover-effect link__hover-effect--white
-                    ">Contact</a>
+                    " onclick="toggleModal()">Contact</a>
                     <a href="#" class="
                     footer__social--link link__hover-effect link__hover-effect--white
                     ">Resume</a>
