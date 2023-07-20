@@ -30,8 +30,7 @@ function contact (event) {
     const success = document.querySelector('.modal__overlay--success');
     loading.classList += ' modal__overlay--visible';
 
-    emailjs
-        .sendForm(
+    emailjs.sendForm(
             'service_586o5bp',
             'template_99fu5i4',
             event.target,
